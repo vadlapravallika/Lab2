@@ -1,0 +1,161 @@
+/* Flexbox Part 1 */
+
+/* Resetting padding and margin for consistency */
+#flex-section1 ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; /* Arranging items in a row */
+    list-style: none; /* Removing list bullet points */
+    justify-content: space-evenly; /* Spacing items evenly within the container */
+}
+
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+
+/* Resetting padding and margin for consistency */
+#flex-section2 ul {
+    padding: 0;
+    margin: 0;
+    display: flex; /* Creating a flex container */
+}
+
+/* Removing list bullet points and allowing items to grow */
+#flex-section2 li {
+    list-style: none;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+/* Ordering specific items within the flex container */
+#flex-section2 .item1 {
+    order: 1;
+}
+
+#flex-section2 .item2 {
+    order: 3;
+}
+
+#flex-section2 .item3 {
+    order: 2;
+}
+
+/* end Flexbox Part 2 */
+
+
+/* Flexbox Part 3 */
+
+/* Creating a flex container for alignment */
+#flex-section3 .box {
+    display: flex;
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    padding: 0;
+    margin: 0;
+}
+
+/* Creating a flex container for tags with flexible wrapping */
+#flex-section3 .tags ul {
+    display: flex;
+    justify-content: flex-start; /* Aligning tags to the left */
+    flex-wrap: wrap; /* Allowing tags to wrap to the next line */
+    list-style: none; /* Removing list bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+/* end Flexbox Part 3 */
+
+
+/* Grid Part 1 */
+
+/* Creating a grid container with specified columns and rows */
+#grid-section1 .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    grid-auto-rows: 100px; /* Auto-sized rows with a height of 100px */
+    justify-items: stretch; /* Stretching items horizontally */
+    justify-content: space-evenly; /* Spacing columns evenly */
+    gap: 20px; /* Gap between grid items */
+    padding: 0;
+    margin: 0;
+}
+
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+
+/* Creating grid items with specific positioning and order */
+#grid-section2 .gridboxblue {
+    display: grid;
+    grid-column: 2 / span 3; /* Starting at column 2 and spanning 3 columns */
+    grid-row: 1 / span 3; /* Starting at row 1 and spanning 3 rows */
+    order: 2;
+}
+
+#grid-section2 .gridboxred {
+    display: grid;
+    grid-column: 1 / span 2; /* Starting at column 1 and spanning 2 columns */
+    grid-row: 2; /* Placing in row 2 */
+    order: 1;
+}
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+
+/* Creating a grid container with specified columns and rows */
+#grid-section3 .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns with a 2:1 ratio */
+    grid-template-rows: 100px 300px 100px; /* Three rows with specified heights */
+    gap: 10px; /* Gap between grid items */
+}
+
+/* Specifying the position and order of grid items */
+#grid-section3 .box1 {
+    grid-column: 1 / span 2; /* Starting at column 1 and spanning 2 columns */
+    grid-row: 1; /* Placing in row 1 */
+}
+
+#grid-section3 .box2 {
+    order: 2; /* Setting the order to 2 */
+}
+
+#grid-section3 .box3 {
+    order: 1; /* Setting the order to 1 */
+}
+
+#grid-section3 .box4 {
+    grid-column: 1 / span 2; /* Starting at column 1 and spanning 2 columns */
+    grid-row: 3; /* Placing in row 3 */
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+/* Styling links within boxes */
+#transition-section .box a {
+    display: inline-block;
+    background-color: #ccc;
+    color: #000;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color, color; /* Adding a transition effect to background color and text color */
+    transition-duration: 3s; /* Transition duration of 3 seconds */
+}
+
+/* Styling links on hover */
+#transition-section .box a:hover {
+    background-color: #cc0000; 
+    color: #fff;
+    transition-duration: .5s; /* Faster transition on hover */
+}
+
+/* end Transition Part */
